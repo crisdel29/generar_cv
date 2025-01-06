@@ -1,0 +1,220 @@
+2024-12-13 08:48:19,148 - app.main - DEBUG - Iniciando aplicación...
+2024-12-13 08:48:19,227 - app.models.database - INFO - Conexión a base de datos establecida: c:\Users\Digitalizador\Desktop\proyecto_cv\data\cv_database.db
+2024-12-13 08:48:19,227 - app.models.database - ERROR - Error al crear instancia de base de datos: 'Database' object has no attribute 'execute'
+2024-12-13 08:48:19,227 - app.main - ERROR - Error en la aplicación: 'Database' object has no attribute 'execute'
+Traceback (most recent call last):
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\main.py", line 58, in start
+    self.login_controller = LoginController()
+                            ^^^^^^^^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\controllers\login_controller.py", line 10, in __init__
+    self.db = Database()
+              ^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\models\database.py", line 55, in __new__
+    cls._instance.crear_tablas()
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\models\database.py", line 62, in crear_tablas
+    conn.execute('''
+    ^^^^^^^^^^^^
+AttributeError: 'Database' object has no attribute 'execute'
+2024-12-13 08:53:14,484 - app.main - DEBUG - Iniciando aplicación...
+2024-12-13 08:53:14,564 - app.models.database - INFO - Conexión a base de datos establecida: c:\Users\Digitalizador\Desktop\proyecto_cv\data\cv_database.db
+2024-12-13 08:53:15,181 - app.models.database - INFO - Todas las tablas creadas/verificadas exitosamente
+2024-12-13 08:53:17,237 - app.main - DEBUG - Login exitoso, creando ventana principal...
+2024-12-13 08:53:17,240 - app.controllers.main_controller - DEBUG - Inicializando MainController...
+2024-12-13 08:53:17,350 - app.controllers.main_controller - ERROR - Error al inicializar MainController: 'RegistroPersonalView' object has no attribute 'correo_input'
+Traceback (most recent call last):
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\controllers\main_controller.py", line 324, in __init__
+    self.view = MainView()
+                ^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\main_view.py", line 12, in __init__
+    self.setup_ui()
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\main_view.py", line 29, in setup_ui
+    self.tab_registro = RegistroPersonalView()  # Usar RegistroPersonalView
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\personal_view.py", line 18, in __init__
+    self.setup_validations()
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\personal_view.py", line 166, in setup_validations
+    self.correo_input.textChanged.connect(self.validar_correo)
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'RegistroPersonalView' object has no attribute 'correo_input'. Did you mean: 'codigo_input'?
+2024-12-13 08:53:17,374 - app.main - ERROR - Error al crear ventana principal: 'RegistroPersonalView' object has no attribute 'correo_input'
+Traceback (most recent call last):
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\main.py", line 78, in on_login_success
+    self.main_controller = MainController()
+                           ^^^^^^^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\controllers\main_controller.py", line 324, in __init__
+    self.view = MainView()
+                ^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\main_view.py", line 12, in __init__
+    self.setup_ui()
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\main_view.py", line 29, in setup_ui
+    self.tab_registro = RegistroPersonalView()  # Usar RegistroPersonalView
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\personal_view.py", line 18, in __init__
+    self.setup_validations()
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\personal_view.py", line 166, in setup_validations
+    self.correo_input.textChanged.connect(self.validar_correo)
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'RegistroPersonalView' object has no attribute 'correo_input'. Did you mean: 'codigo_input'?
+2024-12-13 08:55:33,166 - app.main - DEBUG - Iniciando aplicación...
+2024-12-13 08:55:33,245 - app.models.database - INFO - Conexión a base de datos establecida: c:\Users\Digitalizador\Desktop\proyecto_cv\data\cv_database.db
+2024-12-13 08:55:33,247 - app.models.database - INFO - Todas las tablas creadas/verificadas exitosamente
+2024-12-13 08:55:34,605 - app.main - DEBUG - Login exitoso, creando ventana principal...
+2024-12-13 08:55:34,606 - app.controllers.main_controller - DEBUG - Inicializando MainController...
+2024-12-13 08:55:34,663 - app.controllers.main_controller - ERROR - Error al inicializar MainController: 'RegistroPersonalView' object has no attribute 'correo_input'
+Traceback (most recent call last):
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\controllers\main_controller.py", line 324, in __init__
+    self.view = MainView()
+                ^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\main_view.py", line 12, in __init__
+    self.setup_ui()
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\main_view.py", line 29, in setup_ui
+    self.tab_registro = RegistroPersonalView()  # Usar RegistroPersonalView
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\personal_view.py", line 20, in __init__
+    self.setup_validations()
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\personal_view.py", line 223, in setup_validations
+    self.correo_input.textChanged.connect(self.validar_correo)
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'RegistroPersonalView' object has no attribute 'correo_input'. Did you mean: 'codigo_input'?
+2024-12-13 08:55:34,675 - app.main - ERROR - Error al crear ventana principal: 'RegistroPersonalView' object has no attribute 'correo_input'
+Traceback (most recent call last):
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\main.py", line 78, in on_login_success
+    self.main_controller = MainController()
+                           ^^^^^^^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\controllers\main_controller.py", line 324, in __init__
+    self.view = MainView()
+                ^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\main_view.py", line 12, in __init__
+    self.setup_ui()
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\main_view.py", line 29, in setup_ui
+    self.tab_registro = RegistroPersonalView()  # Usar RegistroPersonalView
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\personal_view.py", line 20, in __init__
+    self.setup_validations()
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\personal_view.py", line 223, in setup_validations
+    self.correo_input.textChanged.connect(self.validar_correo)
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'RegistroPersonalView' object has no attribute 'correo_input'. Did you mean: 'codigo_input'?
+2024-12-13 08:57:13,421 - app.main - DEBUG - Iniciando aplicación...
+2024-12-13 08:57:13,505 - app.models.database - INFO - Conexión a base de datos establecida: c:\Users\Digitalizador\Desktop\proyecto_cv\data\cv_database.db
+2024-12-13 08:57:13,506 - app.models.database - INFO - Todas las tablas creadas/verificadas exitosamente
+2024-12-13 08:57:14,811 - app.main - DEBUG - Login exitoso, creando ventana principal...
+2024-12-13 08:57:14,812 - app.controllers.main_controller - DEBUG - Inicializando MainController...
+2024-12-13 08:57:14,872 - app.controllers.main_controller - ERROR - Error al inicializar MainController: 'RegistroPersonalView' object has no attribute 'correo_input'
+Traceback (most recent call last):
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\controllers\main_controller.py", line 324, in __init__
+    self.view = MainView()
+                ^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\main_view.py", line 12, in __init__
+    self.setup_ui()
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\main_view.py", line 29, in setup_ui
+    self.tab_registro = RegistroPersonalView()  # Usar RegistroPersonalView
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\personal_view.py", line 20, in __init__
+    self.setup_validations()
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\personal_view.py", line 223, in setup_validations
+    self.correo_input.textChanged.connect(self.validar_correo)
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'RegistroPersonalView' object has no attribute 'correo_input'. Did you mean: 'codigo_input'?
+2024-12-13 08:57:14,885 - app.main - ERROR - Error al crear ventana principal: 'RegistroPersonalView' object has no attribute 'correo_input'
+Traceback (most recent call last):
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\main.py", line 78, in on_login_success
+    self.main_controller = MainController()
+                           ^^^^^^^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\controllers\main_controller.py", line 324, in __init__
+    self.view = MainView()
+                ^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\main_view.py", line 12, in __init__
+    self.setup_ui()
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\main_view.py", line 29, in setup_ui
+    self.tab_registro = RegistroPersonalView()  # Usar RegistroPersonalView
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\personal_view.py", line 20, in __init__
+    self.setup_validations()
+  File "c:\Users\Digitalizador\Desktop\proyecto_cv\app\views\personal_view.py", line 223, in setup_validations
+    self.correo_input.textChanged.connect(self.validar_correo)
+    ^^^^^^^^^^^^^^^^^
+AttributeError: 'RegistroPersonalView' object has no attribute 'correo_input'. Did you mean: 'codigo_input'?
+2024-12-13 08:58:27,719 - app.main - DEBUG - Iniciando aplicación...
+2024-12-13 08:58:27,802 - app.models.database - INFO - Conexión a base de datos establecida: c:\Users\Digitalizador\Desktop\proyecto_cv\data\cv_database.db
+2024-12-13 08:58:27,803 - app.models.database - INFO - Todas las tablas creadas/verificadas exitosamente
+2024-12-13 08:58:29,083 - app.main - DEBUG - Login exitoso, creando ventana principal...
+2024-12-13 08:58:29,083 - app.controllers.main_controller - DEBUG - Inicializando MainController...
+2024-12-13 08:58:29,222 - app.controllers.main_controller - DEBUG - Configurando conexiones...
+2024-12-13 08:58:29,222 - app.controllers.main_controller - DEBUG - Conexiones configuradas correctamente
+2024-12-13 08:58:29,224 - app.models.database - DEBUG - Obteniendo todos los registros
+2024-12-13 08:58:29,226 - app.controllers.main_controller - DEBUG - MainController inicializado correctamente
+2024-12-13 08:59:15,438 - app.controllers.main_controller - ERROR - Error al agregar experiencia: name 'ExperienciaWidget' is not defined
+2025-01-06 09:24:34,778 - app.main - DEBUG - Iniciando aplicación...
+2025-01-06 09:24:35,017 - app.models.database - INFO - Conexión a base de datos establecida: c:\Users\Digitalizador\Desktop\proyecto_cv\data\cv_database.db
+2025-01-06 09:24:35,026 - app.models.database - INFO - Todas las tablas creadas/verificadas exitosamente
+2025-01-06 09:24:37,746 - app.main - DEBUG - Login exitoso, creando ventana principal...
+2025-01-06 09:24:37,746 - app.controllers.main_controller - DEBUG - Inicializando MainController...
+2025-01-06 09:24:37,897 - app.controllers.main_controller - DEBUG - Configurando conexiones...
+2025-01-06 09:24:37,897 - app.controllers.main_controller - DEBUG - Conexiones configuradas correctamente
+2025-01-06 09:24:37,898 - app.models.database - DEBUG - Obteniendo todos los registros
+2025-01-06 09:24:37,899 - app.controllers.main_controller - DEBUG - MainController inicializado correctamente
+2025-01-06 09:25:07,882 - app.controllers.main_controller - ERROR - Error al agregar experiencia: name 'ExperienciaWidget' is not defined
+2025-01-06 09:28:50,569 - app.controllers.main_controller - ERROR - Error al agregar experiencia: name 'ExperienciaWidget' is not defined
+2025-01-06 10:58:45,802 - app.main - DEBUG - Iniciando aplicación...
+2025-01-06 10:58:45,911 - app.models.database - INFO - Conexión a base de datos establecida: c:\Users\Digitalizador\Desktop\proyecto_cv\data\cv_database.db
+2025-01-06 10:58:45,912 - app.models.database - INFO - Todas las tablas creadas/verificadas exitosamente
+2025-01-06 10:58:48,229 - app.main - DEBUG - Login exitoso, creando ventana principal...
+2025-01-06 10:58:48,230 - app.controllers.main_controller - DEBUG - Inicializando MainController...
+2025-01-06 10:58:48,360 - app.controllers.main_controller - DEBUG - Configurando conexiones...
+2025-01-06 10:58:48,360 - app.controllers.main_controller - DEBUG - Conexiones configuradas correctamente
+2025-01-06 10:58:48,361 - app.models.database - DEBUG - Obteniendo todos los registros
+2025-01-06 10:58:48,363 - app.controllers.main_controller - DEBUG - MainController inicializado correctamente
+2025-01-06 10:58:57,951 - app.main - DEBUG - Iniciando aplicación...
+2025-01-06 10:58:58,024 - app.models.database - INFO - Conexión a base de datos establecida: c:\Users\Digitalizador\Desktop\proyecto_cv\data\cv_database.db
+2025-01-06 10:58:58,025 - app.models.database - INFO - Todas las tablas creadas/verificadas exitosamente
+2025-01-06 10:58:59,485 - app.main - DEBUG - Login exitoso, creando ventana principal...
+2025-01-06 10:58:59,485 - app.controllers.main_controller - DEBUG - Inicializando MainController...
+2025-01-06 10:58:59,606 - app.controllers.main_controller - DEBUG - Configurando conexiones...
+2025-01-06 10:58:59,606 - app.controllers.main_controller - DEBUG - Conexiones configuradas correctamente
+2025-01-06 10:58:59,607 - app.models.database - DEBUG - Obteniendo todos los registros
+2025-01-06 10:58:59,608 - app.controllers.main_controller - DEBUG - MainController inicializado correctamente
+2025-01-06 11:00:21,899 - app.main - DEBUG - Iniciando aplicación...
+2025-01-06 11:00:21,973 - app.models.database - INFO - Conexión a base de datos establecida: c:\Users\Digitalizador\Desktop\proyecto_cv\data\cv_database.db
+2025-01-06 11:00:21,974 - app.models.database - INFO - Todas las tablas creadas/verificadas exitosamente
+2025-01-06 11:00:36,501 - app.main - DEBUG - Iniciando aplicación...
+2025-01-06 11:00:36,579 - app.models.database - INFO - Conexión a base de datos establecida: c:\Users\Digitalizador\Desktop\proyecto_cv\data\cv_database.db
+2025-01-06 11:00:36,580 - app.models.database - INFO - Todas las tablas creadas/verificadas exitosamente
+2025-01-06 11:00:37,940 - app.main - DEBUG - Login exitoso, creando ventana principal...
+2025-01-06 11:00:37,941 - app.controllers.main_controller - DEBUG - Inicializando MainController...
+2025-01-06 11:00:38,067 - app.controllers.main_controller - DEBUG - Configurando conexiones...
+2025-01-06 11:00:38,067 - app.controllers.main_controller - DEBUG - Conexiones configuradas correctamente
+2025-01-06 11:00:38,068 - app.models.database - DEBUG - Obteniendo todos los registros
+2025-01-06 11:00:38,070 - app.controllers.main_controller - DEBUG - MainController inicializado correctamente
+2025-01-06 11:01:10,967 - app.controllers.main_controller - ERROR - Error al agregar experiencia: name 'ExperienciaWidget' is not defined
+2025-01-06 11:01:26,983 - app.main - DEBUG - Iniciando aplicación...
+2025-01-06 11:01:27,073 - app.models.database - INFO - Conexión a base de datos establecida: c:\Users\Digitalizador\Desktop\proyecto_cv\data\cv_database.db
+2025-01-06 11:01:27,074 - app.models.database - INFO - Todas las tablas creadas/verificadas exitosamente
+2025-01-06 11:01:28,715 - app.main - DEBUG - Login exitoso, creando ventana principal...
+2025-01-06 11:01:28,716 - app.controllers.main_controller - DEBUG - Inicializando MainController...
+2025-01-06 11:01:28,841 - app.controllers.main_controller - DEBUG - Configurando conexiones...
+2025-01-06 11:01:28,841 - app.controllers.main_controller - DEBUG - Conexiones configuradas correctamente
+2025-01-06 11:01:28,842 - app.models.database - DEBUG - Obteniendo todos los registros
+2025-01-06 11:01:28,843 - app.controllers.main_controller - DEBUG - MainController inicializado correctamente
+2025-01-06 11:01:33,735 - app.controllers.main_controller - ERROR - Error al agregar experiencia: name 'ExperienciaWidget' is not defined
+2025-01-06 11:03:18,548 - app.main - DEBUG - Iniciando aplicación...
+2025-01-06 11:03:18,624 - app.models.database - INFO - Conexión a base de datos establecida: c:\Users\Digitalizador\Desktop\proyecto_cv\data\cv_database.db
+2025-01-06 11:03:18,624 - app.models.database - INFO - Todas las tablas creadas/verificadas exitosamente
+2025-01-06 11:03:20,146 - app.main - DEBUG - Login exitoso, creando ventana principal...
+2025-01-06 11:03:20,147 - app.controllers.main_controller - DEBUG - Inicializando MainController...
+2025-01-06 11:03:20,269 - app.controllers.main_controller - DEBUG - Configurando conexiones...
+2025-01-06 11:03:20,270 - app.controllers.main_controller - DEBUG - Conexiones configuradas correctamente
+2025-01-06 11:03:20,270 - app.models.database - DEBUG - Obteniendo todos los registros
+2025-01-06 11:03:20,271 - app.controllers.main_controller - DEBUG - MainController inicializado correctamente
+2025-01-06 11:03:32,135 - app.controllers.main_controller - ERROR - Error al agregar experiencia: name 'ExperienciaWidget' is not defined
+2025-01-06 11:07:48,689 - app.main - DEBUG - Iniciando aplicación...
+2025-01-06 11:07:48,763 - app.models.database - INFO - Conexión a base de datos establecida: c:\Users\Digitalizador\Desktop\proyecto_cv\data\cv_database.db
+2025-01-06 11:07:48,764 - app.models.database - INFO - Todas las tablas creadas/verificadas exitosamente
+2025-01-06 11:07:50,280 - app.main - DEBUG - Login exitoso, creando ventana principal...
+2025-01-06 11:07:50,280 - app.controllers.main_controller - DEBUG - Inicializando MainController...
+2025-01-06 11:07:50,402 - app.controllers.main_controller - DEBUG - Configurando conexiones...
+2025-01-06 11:07:50,402 - app.controllers.main_controller - DEBUG - Conexiones configuradas correctamente
+2025-01-06 11:07:50,402 - app.models.database - DEBUG - Obteniendo todos los registros
+2025-01-06 11:07:50,404 - app.controllers.main_controller - DEBUG - MainController inicializado correctamente
+2025-01-06 11:10:00,893 - app.controllers.main_controller - ERROR - Error al obtener datos del formulario: 'RegistroPersonalView' object has no attribute 'nombres_input'
+2025-01-06 11:10:00,894 - app.controllers.main_controller - ERROR - Error al guardar registro: 'RegistroPersonalView' object has no attribute 'nombres_input'

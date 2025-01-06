@@ -1,0 +1,197 @@
+/* app/resources/styles/style.qss */
+
+/* Estilos generales */
+QMainWindow {
+    background-color: #f0f0f0;
+}
+
+QWidget {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* Botones */
+QPushButton {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: #1976D2;
+}
+
+QPushButton:pressed {
+    background-color: #0D47A1;
+}
+
+QPushButton:disabled {
+    background-color: #BDBDBD;
+}
+
+/* Campos de texto */
+QLineEdit {
+    padding: 8px;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    background-color: white;
+}
+
+QLineEdit:focus {
+    border: 2px solid #2196F3;
+}
+
+/* ComboBox */
+QComboBox {
+    padding: 8px;
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    background-color: white;
+}
+
+QComboBox::drop-down {
+    border: none;
+}
+
+QComboBox::down-arrow {
+    image: url(resources/images/icons/dropdown.png);
+    width: 12px;
+    height: 12px;
+}
+
+/* Tablas */
+QTableWidget {
+    background-color: white;
+    alternate-background-color: #f5f5f5;
+    border: 1px solid #BDBDBD;
+}
+
+QTableWidget::item {
+    padding: 8px;
+}
+
+QTableWidget::item:selected {
+    background-color: #2196F3;
+    color: white;
+}
+
+QHeaderView::section {
+    background-color: #E0E0E0;
+    padding: 8px;
+    border: none;
+    border-right: 1px solid #BDBDBD;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+/* Pestañas */
+QTabWidget::pane {
+    border: 1px solid #BDBDBD;
+    background-color: white;
+}
+
+QTabBar::tab {
+    background-color: #E0E0E0;
+    padding: 8px 16px;
+    border: 1px solid #BDBDBD;
+    border-bottom: none;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background-color: white;
+}
+
+/* Barras de desplazamiento */
+QScrollBar:vertical {
+    border: none;
+    background-color: #F5F5F5;
+    width: 10px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #BDBDBD;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #9E9E9E;
+}
+
+/* Mensajes */
+QMessageBox {
+    background-color: white;
+}
+
+QMessageBox QPushButton {
+    min-width: 100px;
+}
+
+/* Formularios */
+QGroupBox {
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 5px;
+    background-color: white;
+}
+
+/* Pantalla de login */
+#loginWidget {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#loginTitle {
+    font-size: 24px;
+    color: #1976D2;
+    margin-bottom: 20px;
+}
+
+#loginButton {
+    background-color: #4CAF50;
+    margin-top: 20px;
+}
+
+/* Barra de herramientas */
+#toolBar {
+    background-color: white;
+    border-bottom: 1px solid #BDBDBD;
+    padding: 8px;
+}
+
+#toolBar QPushButton {
+    margin-right: 8px;
+}
+
+/* Panel de experiencia */
+#experiencePanel {
+    background-color: #FAFAFA;
+    padding: 16px;
+    margin: 8px;
+    border-radius: 4px;
+}
+
+/* Botones especiales */
+#addButton {
+    background-color: #4CAF50;
+}
+
+#deleteButton {
+    background-color: #F44336;
+}
+
+#exportButton {
+    background-color: #FF9800;
+}

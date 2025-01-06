@@ -1,0 +1,28 @@
+/* app/resources/styles/themes/dark.qss */
+
+/* Variables de color del tema oscuro */
+:root {
+    --primary-color: #2196F3;
+    --primary-dark: #1976D2;
+    --primary-light: #BBDEFB;
+    --accent-color: #FF4081;
+    --background-color: #121212;
+    --surface-color: #1e1e1e;
+    --error-color: #CF6679;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B3B3B3;
+    --divider-color: #2D2D2D;
+}
+
+/* Estilos específicos del tema oscuro */
+QMainWindow, QWidget {
+    background-color: var(--background-color);
+    color: var(--text-primary);
+}
+
+QPushButton {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Resto de los estilos adaptados para el tema oscuro */

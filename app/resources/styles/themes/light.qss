@@ -1,0 +1,17 @@
+/* app/resources/styles/themes/light.qss */
+
+/* Variables de color del tema claro */
+:root {
+    --primary-color: #2196F3;
+    --primary-dark: #1976D2;
+    --primary-light: #BBDEFB;
+    --accent-color: #FF4081;
+    --background-color: #f0f0f0;
+    --surface-color: #ffffff;
+    --error-color: #F44336;
+    --text-primary: #212121;
+    --text-secondary: #757575;
+    --divider-color: #BDBDBD;
+}
+
+/* Resto del estilo similar al style.qss pero usando las variables definidas */
